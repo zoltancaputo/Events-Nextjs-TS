@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #171717;
+  --foreground: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,8 +23,40 @@ body {
 @layer components {
   .container {
     @apply mx-auto max-w-7xl px-4;
+
     
   }
+
+  .botao {
+    @apply flex justify-center items-center;
+    @apply gap-2 rounded-md px-9 h-9;
+    @apply text-sm font-semibold;
+  }  
+
+  .botao.azul {
+    @apply bg-blue-500  text-white;
+  } 
+
+  .botão.azul:hover {
+    @apply bg-blue-600;
+  }  
+
+  .botão.vermelho {
+    @apply bg-blue-600 text-white;
+  }  
+
+  .botão.vermelho:hover {
+    @apply bg-red-600;
+  } 
+
+  .botão.verde {
+    @apply bg-green-500;
+  }  
+
+  .botão.verde:hover {
+    @apply bg-green-600;
+  } 
+
 }
 
 

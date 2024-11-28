@@ -1,4 +1,4 @@
-import { Id, Senha } from "@/core/shared";
+import { Id, Senha } from "@/core/evento/shared";
 import Evento from "../model/Evento";
 import validarEvento from "./validarEvento";
 
